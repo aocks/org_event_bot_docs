@@ -1,0 +1,183 @@
+
+* Introduction
+
+This documentation describes the =OrgEventBot= Telegram bot
+for organizing events.
+
+=OrgEventBot= is basically a Telegram bot for organizing events. It is
+similar to apps like =TeamSnap=, =LeagueApps=, [[https://www.g2.com/products/teamsnap/competitors/alternatives][and others]] except that
+=OrgEventBot= bot is a *free* Telegram app *without ads*. You can also
+use it to organize non-sports activities.
+
+See the [[#usage][Usage]] section for information on how to use the app and the
+[[#faq][FAQ]] for Frequently Asked Questions.
+
+* Usage
+   :PROPERTIES:
+   :CUSTOM_ID:     usage
+   :END:
+
+
+ 1. [[#create-a-telegram-account-if-necessary][Create a telegram account if necessary]]
+ 1. [[#starting-a-conversation-with-orgeventbot][Starting a conversation with OrgEventBot]]
+ 1. [[#create-a-new-org][Create a new org]]
+ 1. [[#create-events][Create events]]
+ 1. [[#joining-an-org][Joining an org]]
+
+** Create a telegram account if necessary
+   :PROPERTIES:
+   :CUSTOM_ID:     create-a-telegram-account-if-necessary
+   :END:
+
+If you do not yet have a Telegram account, you can go to
+https://telegram.org/ and download the app for your phone or desktop
+(or use the web client) and create an account.
+
+** Starting a conversation with OrgEventBot
+   :PROPERTIES:
+   :CUSTOM_ID:       starting-a-conversation-with-orgeventbot
+   :END:
+
+Once you have a Telegram account, you can search for =OrgEventBot= and
+start a conversation as shown in the video below.
+
+#+comment: Provide details/summary in html for rendering
+#+comment: on GitHub or other places
+#+html: <details><summary> Expand for video of starting a conversation </summary>
+
+#+name: fig:start-conversation
+#+caption: Starting a conversation with OrgEventBot.
+[[file:images/start-conversation.gif]]
+
+#+html: </details>
+
+** Create a new org
+   :PROPERTIES:
+   :CUSTOM_ID:       create-a-new-org
+   :END:
+
+
+If you are the organizer, you need to create a new "org". If not, you
+can skip to the [[#joining-an-org][Joining an org]] section.
+
+You can currently create up to 10 orgs to manage different kinds of
+activities. To create an org, you can either select =/neworg= from the
+Telegram menu or type =/neworg= when talking to =@OrgEventBot= as
+shown in the video below. You will need to click on the ="org"= button
+to choose the name of your organization.
+
+#+comment: Provide details/summary in html for rendering
+#+comment: on GitHub or other places
+#+html: <details><summary> Expand for video of creating a new org </summary>
+
+#+name: fig:neworg
+#+caption: Creating a new organization.
+[[file:images/neworg.gif]]
+
+#+html: </details>
+
+After you create a new organization, you will probably want to tell
+your friends or colleagues the name of the new org, suggest they
+[[#create-a-telegram-account-if-necessary][Create a telegram account if necessary]], and point them to the
+documentation on [[#starting-a-conversation-with-orgeventbot][Starting a conversation with OrgEventBot]] and [[#joining-an-org][Joining an org]].
+
+
+
+
+** Create events
+   :PROPERTIES:
+   :CUSTOM_ID:       create-events
+   :END:
+
+
+If you are the organizer, you need to create events in your org. If not, you
+can skip to the [[#joining-an-org][Joining an org]] section.
+
+The easiest way to create an event is to first choose =/orginfo= from
+the menu (or type =/orginfo=) in your chat with =@OrgEventBot=, then
+select the desired org from the list of organizations, and then choose
+"Create Event" as shown in the video below:
+
+#+comment: Provide details/summary in html for rendering
+#+comment: on GitHub or other places
+#+html: <details><summary> Expand for video of creating a new event. </summary>
+
+#+name: fig:create-event
+#+caption: Creating a new event.
+[[file:images/create-event.gif]]
+
+#+html: </details>
+
+After you choose "Create Event" you will need to fill out various
+options such as the name, description, latitude and longitude (so that the
+map feature works), and the date. For the date, the only format
+currently supported is
+
+- =YYYY-MM-DD hh:mm:ss=
+
+Where =YYYY= is the four digit year, =MM= is the two digit month, =DD=
+is the two digit day, =hh= is the hour (in 24-hour time so 2 pm is
+14), =mm= is the two digit minute, and =ss= is the two digit second.
+
+** Joining an org
+   :PROPERTIES:
+   :CUSTOM_ID:       joining-an-org
+   :END:
+
+You can join an org that someone else has created in order to see
+upcoming events. You do not need to join an org if you [[#create-a-new-org][create a new
+org]] since you will automatically be a part of it.
+
+To join an org, you can select =/join= from the Telegram menu or type
+=/join= in your conversation with =@OrgEventBot=. This will send a
+join request to the owner of the org. Once they approve, you will
+receive a Telegram message indicating you are part of the org and can
+view upcoming events using the =/upcoming= command as shown in the
+video below.
+
+#+comment: Provide details/summary in html for rendering
+#+comment: on GitHub or other places
+#+html: <details><summary> Expand for video of joining an org </summary>
+
+#+name: fig:join-org
+#+caption: Joining an org.
+[[file:images/join-org.gif]]
+
+#+html: </details>
+* FAQ
+   :PROPERTIES:
+   :CUSTOM_ID:     faq
+   :END:
+
+** How do I chat with members of my org?
+
+To chat with other members individually you can send them a message on
+Telegram or you can create a Telegram Group so that people can message
+the group.
+
+=@OrgEventBot= does not include a separate chat feature
+since Telegram is already a full featured chat app. Instead
+=@OrgEventBot= adds features for managing organizations and events on
+top of the existing chat features.
+
+** Why use OrgEventBot instead of a shared calendar?
+
+Shared calendars are a good option but many people and organizations
+are choosing apps because calendars often rely on email (which is
+harder to track), lack chat features, and are generally clunkier.
+
+** Why use OrgEventBot instead of another app?
+
+OrgEventBot bot is *free*, has *no ads*, and is built on top of one of
+the most commonly used chat apps (Telegram). By using OrgEventBot, you
+don't need to install another app to manage teams/events/organizations
+and you get all the features of Telegram.
+
+** How do I ask for help?
+
+To ask for help, [[https://github.com/aocks/org_event_bot_docs/issues][create an issue]] on the [[https://github.com/aocks/org_event_bot_docs][GitHub project]].
+
+** How do I suggest a new feature?
+
+To request a new feature, [[https://github.com/aocks/org_event_bot_docs/issues][create an issue]] on the [[https://github.com/aocks/org_event_bot_docs][GitHub project]].
+
