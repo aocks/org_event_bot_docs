@@ -23,6 +23,7 @@ See the [[#usage][Usage]] section for information on how to use the app and the
  1. [[#create-a-new-org][Create a new org]]
  1. [[#create-events][Create events]]
  1. [[#joining-an-org][Joining an org]]
+ 1. [[#use-orginfo-or-upcoming-to-view-events][Use orginfo or upcoming to view events]]
 
 ** Create a telegram account if necessary
    :PROPERTIES:
@@ -80,7 +81,6 @@ After you create a new organization, you will probably want to tell
 your friends or colleagues the name of the new org, suggest they
 [[#create-a-telegram-account-if-necessary][Create a telegram account if necessary]], and point them to the
 documentation on [[#starting-a-conversation-with-orgeventbot][Starting a conversation with OrgEventBot]] and [[#joining-an-org][Joining an org]].
-
 
 
 
@@ -144,6 +144,17 @@ video below.
 [[file:images/join-org.gif]]
 
 #+html: </details>
+** Use orginfo or upcoming to view events
+   :PROPERTIES:
+   :CUSTOM_ID:     use-orginfo-or-upcoming-to-view-events
+   :END:
+
+Once you are part of an organization with some events, you can use the
+=/orginfo= command with =@OrgEventBot= to see a list of organizations
+and choose the one you want to see events for or use the =/upcoming=
+command to see events for all organizations you are a part of.
+
+
 * FAQ
    :PROPERTIES:
    :CUSTOM_ID:     faq
