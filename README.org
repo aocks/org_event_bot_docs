@@ -63,7 +63,7 @@ can skip to the [[#joining-an-org][Joining an org]] section.
 You can currently create up to 10 orgs to manage different kinds of
 activities. To create an org, you can either select =/neworg= from the
 Telegram menu or type =/neworg= when talking to =@OrgEventBot= as
-shown in the video below. You will need to click on the ="org"= button
+shown in the video below. You will need to click on the =org= button
 to choose the name of your organization.
 
 #+comment: Provide details/summary in html for rendering
